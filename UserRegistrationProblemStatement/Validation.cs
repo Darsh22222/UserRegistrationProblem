@@ -13,6 +13,7 @@ namespace UserRegistrationProblemStatement
         public const string LAST_NAME_REGEX = "^[A-Z]{1}[a-zA-Z]{2}$";
         public const string EMAIL_REGEX = "^[a-z0-9]+[@][a-zA-Z]+[.][a-zA-Z]{2,3}$";
         public const string MOBILE_NUMBER = "^[1-9]{2}[ ][0-9]{10}$";
+        public const string PASSWORD = "^[a-zA-Z]{8}$";
         public void FirstName(string firstname)               //UC1-In FirstName the First Letter Should Capital and minimum 3 Character
         {
             Regex regex = new Regex(FIRST_NAME_REGEX);
@@ -35,6 +36,12 @@ namespace UserRegistrationProblemStatement
         {
             Regex regex = new Regex(MOBILE_NUMBER);
             bool result = regex.IsMatch(mobileno);
+            Console.WriteLine(result);
+        }
+        public void Password(string password)              
+        {
+            Regex regex = new Regex(PASSWORD);
+            bool result = regex.IsMatch(password);
             Console.WriteLine(result);
         }
     }

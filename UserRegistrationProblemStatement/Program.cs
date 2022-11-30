@@ -20,6 +20,10 @@
             Console.WriteLine("Enter Mobile Number Start With 91 : ");
             string phone = Console.ReadLine();
             validation.MobileNumber(phone);
+
+            Console.WriteLine("Enter Minimum 8 Character Password: ");
+            string password = Console.ReadLine();
+            validation.Password(password);
         }
     }
 }

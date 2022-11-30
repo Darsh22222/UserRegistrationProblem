@@ -28,6 +28,10 @@
             Console.WriteLine("Enter Password At Least One Upper Case: ");
             string passwordcapital = Console.ReadLine();
             validation.PasswordOneCapital(passwordcapital);
+
+            Console.WriteLine("Enter Password At Least One Numeric: ");
+            string passwordnumeric = Console.ReadLine();
+            validation.PasswordNum(passwordnumeric);
         }
     }
 }

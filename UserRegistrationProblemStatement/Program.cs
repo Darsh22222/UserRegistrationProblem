@@ -24,6 +24,10 @@
             Console.WriteLine("Enter Minimum 8 Character Password: ");
             string password = Console.ReadLine();
             validation.Password(password);
+
+            Console.WriteLine("Enter Password At Least One Upper Case: ");
+            string passwordcapital = Console.ReadLine();
+            validation.PasswordOneCapital(passwordcapital);
         }
     }
 }

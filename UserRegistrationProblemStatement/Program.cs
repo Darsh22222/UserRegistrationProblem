@@ -8,6 +8,10 @@
             Console.WriteLine("Enter The First Name: ");
             string firstName = Console.ReadLine();
             validation.FirstName(firstName);
+
+            Console.WriteLine("Enter The Last Name: ");
+            string lastName = Console.ReadLine();
+            validation.LastName(lastName);
         }
     }
 }

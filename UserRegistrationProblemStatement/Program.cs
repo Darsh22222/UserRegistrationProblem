@@ -16,6 +16,10 @@
             Console.WriteLine("Enter The Email: ");
             string email = Console.ReadLine();
             validation.Email(email);
+
+            Console.WriteLine("Enter Mobile Number Start With 91 : ");
+            string phone = Console.ReadLine();
+            validation.MobileNumber(phone);
         }
     }
 }
